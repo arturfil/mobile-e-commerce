@@ -1,8 +1,11 @@
 import React from 'react';
 import { Box, Text } from 'react-native-design-utility'
+import { Image } from 'react-native'
 
-const OnboardingLogo = () => {
-  <Box f={1} center>
+import {images} from '../constants/images'
+
+const OnboardingLogo = () => (  
+  <Box center>
     <Box mb="sm">
       <Image source={images.logo} />
     </Box>
@@ -18,4 +21,7 @@ const OnboardingLogo = () => {
       Easy grocery shopping
     </Text>
   </Box>
-}
+)
+
+
+export default OnboardingLogo;
